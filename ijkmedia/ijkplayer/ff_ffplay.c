@@ -3411,7 +3411,7 @@ static int read_thread(void *arg)
                 (strcmp(ic->iformat->name, "rtsp") ||
                  (ic->pb && !strncmp(ffp->input_filename, "mmsh:", 5)))) {
             /* wait 10 ms to avoid trying to get another packet */
-            /* XXX: horrible */
+
             SDL_Delay(10);
             continue;
         }
